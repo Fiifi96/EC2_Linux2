@@ -1,0 +1,7 @@
+## This run the tasks on a specific IP address 
+
+- include_tasks: Web_tasks.yml
+  when:  "'ec2-3-142-235-213.us-east-2.compute.amazonaws.com' in inventory_hostname"
+
+- include_tasks: Web_tasks.yml
+  when:  "'ec2-3-135-212-152.us-east-2.compute.amazonaws.com' in inventory_hostname"  

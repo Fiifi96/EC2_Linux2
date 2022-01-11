@@ -1,0 +1,4 @@
+## This run the tasks on a specific IP address 
+
+- include_tasks: LB_task.yml
+  when:  "'ec2-18-224-25-179.us-east-2.compute.amazonaws.com' in inventory_hostname"

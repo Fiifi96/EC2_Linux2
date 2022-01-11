@@ -1,0 +1,7 @@
+---
+- hosts: ec2
+  become: true
+
+  roles:
+  # - role: loadb_roles
+  - role: Web_roles
